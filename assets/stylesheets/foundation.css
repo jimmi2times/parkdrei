@@ -2501,7 +2501,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Noto Serif", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -2554,7 +2554,7 @@ button {
   display: none !important; }
 
 .row {
-  max-width: 75rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto; }
   .row::before, .row::after {
@@ -3336,7 +3336,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Noto Serif", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -3396,7 +3396,7 @@ a {
     border: 0; }
 
 hr {
-  max-width: 75rem;
+  max-width: 50rem;
   height: 0;
   border-right: 0;
   border-top: 0;
@@ -5238,7 +5238,7 @@ html.is-reveal-open body {
   @media screen and (min-width: 40em) {
     .reveal {
       width: 600px;
-      max-width: 75rem; } }
+      max-width: 50rem; } }
   @media screen and (min-width: 40em) {
     .reveal .reveal {
       left: auto;
@@ -5249,15 +5249,15 @@ html.is-reveal-open body {
   @media screen and (min-width: 40em) {
     .reveal.tiny {
       width: 30%;
-      max-width: 75rem; } }
+      max-width: 50rem; } }
   @media screen and (min-width: 40em) {
     .reveal.small {
       width: 50%;
-      max-width: 75rem; } }
+      max-width: 50rem; } }
   @media screen and (min-width: 40em) {
     .reveal.large {
       width: 90%;
-      max-width: 75rem; } }
+      max-width: 50rem; } }
   .reveal.full {
     top: 0;
     left: 0;
@@ -6732,7 +6732,7 @@ a::after {
   border-top: 1px solid #ccc;
   margin-top: 3.75rem; }
   #footer-container #footer {
-    max-width: 75rem;
+    max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
     padding: 1.875rem 0; }
@@ -6774,7 +6774,7 @@ a::after {
 
 body#tinymce {
   height: auto;
-  max-width: 75rem;
+  max-width: 50rem;
   padding: 1.25rem !important; }
 
 .sites-button {
@@ -6824,7 +6824,7 @@ body#tinymce {
   position: relative;
   text-align: left; }
   #front-hero .marketing {
-    max-width: 75rem;
+    max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
     max-width: 55rem; }
@@ -6934,7 +6934,7 @@ body#tinymce {
     margin-top: 1.25rem; }
 
 .intro {
-  max-width: 75rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto; }
   .intro::before, .intro::after {
@@ -6977,7 +6977,7 @@ body#tinymce {
           margin-bottom: 2rem; } }
 
 .section-divider {
-  max-width: 75rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto; }
   .section-divider::before, .section-divider::after {
@@ -7000,7 +7000,7 @@ body#tinymce {
       float: right; }
 
 .benefits {
-  max-width: 75rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center; }
@@ -7087,7 +7087,7 @@ body#tinymce {
     .benefits .professional p {
       font-size: 0.9375rem; }
   .benefits .why-foundation {
-    max-width: 75rem;
+    max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -7108,7 +7108,7 @@ body#tinymce {
       float: right; }
 
 #kitchen-sink {
-  max-width: 75rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem; }
@@ -7211,7 +7211,7 @@ body#tinymce {
       background: #e1e1e1; }
 
 #page {
-  max-width: 75rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem; }
@@ -7246,7 +7246,7 @@ body#tinymce {
           float: right; } }
 
 #page-sidebar-left {
-  max-width: 75rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem; }
@@ -7310,7 +7310,7 @@ body#tinymce {
           float: right; } }
 
 #page-full-width {
-  max-width: 75rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem; }
@@ -7332,7 +7332,7 @@ body#tinymce {
       float: right; }
 
 #single-post {
-  max-width: 75rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem; }

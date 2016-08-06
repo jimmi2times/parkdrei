@@ -17,6 +17,10 @@
 @import "global/wp-admin"; // Fix issues with wp-admin bar positioning
 @import "global/wp-overrides"; // Override the default WordPress styling for some elements
 
+// WP parkdrei global
+@import "global/parkdrei"; // Override the default WordPress styling for some elements
+
+
 // Third-party libraries
 @import 'font-awesome';
 @import 'motion-ui';
