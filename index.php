@@ -33,7 +33,7 @@ get_header(); ?>
 			</nav>
 		<?php } ?>
 	</article>
-	<?php get_sidebar(); ?>
+	<?php //get_sidebar(); ?>
 
 </div>
 
