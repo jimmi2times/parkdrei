@@ -2501,7 +2501,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Noto Serif", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Noto Serif", "Helvetica Neue", Helvetica, Roboto, Arial, serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -3336,7 +3336,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Serif", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Noto Serif", "Helvetica Neue", Helvetica, Roboto, Arial, serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -3373,13 +3373,13 @@ h6 {
 
 @media screen and (min-width: 40em) {
   h1 {
-    font-size: 3rem; }
-  h2 {
     font-size: 2.5rem; }
+  h2 {
+    font-size: 2rem; }
   h3 {
-    font-size: 1.9375rem; }
-  h4 {
     font-size: 1.5625rem; }
+  h4 {
+    font-size: 1.25rem; }
   h5 {
     font-size: 1.25rem; }
   h6 {
@@ -6624,8 +6624,20 @@ table.hover tr:nth-of-type(even):hover {
   My custom styles:
   Add your scss files below to structure your project styles
 */
-a {
+.main-content a {
   font-weight: bold; }
+
+.main-content a:hover {
+  text-decoration: underline; }
+
+.main-content .byline.author {
+  font-size: 0.8em; }
+
+.main-content img {
+  margin-bottom: 6px; }
+
+aside .widget {
+  color: #ccc; }
 
 /* Navigation breakpoints */
 @media screen and (max-width: 39.9375em) {
@@ -6762,7 +6774,7 @@ a::after {
     float: right; }
   @media screen and (min-width: 40em) {
     .sidebar {
-      width: 33.33333%;
+      width: 25%;
       float: left;
       padding-left: 0.625rem;
       padding-right: 0.625rem;
@@ -7236,7 +7248,7 @@ body#tinymce {
       float: right; }
     @media screen and (min-width: 40em) {
       #page .main-content {
-        width: 66.66667%;
+        width: 75%;
         float: left;
         padding-left: 0.625rem;
         padding-right: 0.625rem; } }

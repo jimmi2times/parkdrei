@@ -15,6 +15,17 @@
 
 get_header(); ?>
 <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<style type="text/css">
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('http://liga.parkdrei.de/wp-content/themes/blaskan/fonts/league_gothic-webfont.eot'); /* IE9 Compat Modes */
+  src: url('http://liga.parkdrei.de/wp-content/themes/blaskan/fonts/league_gothic-webfont.eot?iefix') format('eot'), /* IE6-IE8 */
+       url('http://liga.parkdrei.de/wp-content/themes/blaskan/fonts/league_gothic-webfont.woff') format('woff'), /* Modern Browsers */
+       url('http://liga.parkdrei.de/wp-content/themes/blaskan/fonts/league_gothic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('http://liga.parkdrei.de/wp-content/themes/blaskan/fonts/league_gothic-webfont.svg#webfont3nLbXkSC') format('svg'); /* Legacy iOS */
+}
+</style>
+
 <div id="page" role="main">
 	<article class="main-content">
 	<?php if ( have_posts() ) : ?>
@@ -33,7 +44,7 @@ get_header(); ?>
 			</nav>
 		<?php } ?>
 	</article>
-	<?php //get_sidebar(); ?>
+	<?php get_sidebar(); ?>
 
 </div>
 

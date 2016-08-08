@@ -1,3 +1,26 @@
-a {
- font-weight: bold;
+h1, h2 {
+}
+
+.main-content {
+  a {
+   font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .byline.author {
+    font-size: 0.8em;
+  }
+  img {
+    margin-bottom: 6px;
+  }
+}
+
+
+
+// sidebar
+aside {
+  .widget {
+    color: #ccc;
+  }
 }
