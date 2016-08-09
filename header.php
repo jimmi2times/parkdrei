@@ -50,9 +50,11 @@
 			</div>
 		</nav>
 
+<!--
 		<div class="row">
 			Headersumms
 		</div>
+-->
 	</header>
 
 	<section class="container">

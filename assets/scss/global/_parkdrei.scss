@@ -1,26 +1,64 @@
+// fonts
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic);
+
+
+// global
+
+$parkdrei-primary: #006f08;
+$parkdrei-secondary: #53ff5f;
+
 h1, h2 {
 }
 
-.main-content {
-  a {
-   font-weight: bold;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+// Main column
+article.main-content {
   .byline.author {
     font-size: 0.8em;
   }
-  img {
-    margin-bottom: 6px;
+  h1, h2, h3 {
+    font-weight: bold;
+    a:hover {
+      background: $parkdrei-secondary;
+      text-decoration: none;
+    }
+
+  }
+
+  // Der eigentliche Text
+  .entry-content {
+    a {
+      text-decoration: none;
+      background-image: linear-gradient(to top, #fff 0, #fff 49%, #000 50%, #000 100%);
+      background-size: 2px 2px;
+      background-repeat: repeat-x;
+      background-position: 0 105%;
+      padding: 1px 0
+    }
+    a:hover {
+      background: $parkdrei-secondary;
+    }
+    img {
+      margin-bottom: 6px;
+    }
+
   }
 }
-
-
 
 // sidebar
 aside {
   .widget {
     color: #ccc;
+    font-size: 0.8em;
+    a {
+      color: #ccc;
+    }
+
+    a:hover {
+      background: $parkdrei-secondary;
+      color: $black;
+    }
+
   }
 }
+
+// Footer
