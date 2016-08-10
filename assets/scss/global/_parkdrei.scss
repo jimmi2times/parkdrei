@@ -7,9 +7,6 @@
 $parkdrei-primary: #006f08;
 $parkdrei-secondary: #53ff5f;
 
-h1, h2 {
-}
-
 // Main column
 article.main-content {
   .byline.author {
@@ -42,10 +39,61 @@ article.main-content {
     }
 
   }
+  footer {
+    font-size: 0.8em;
+    a:hover {
+      background: $parkdrei-secondary;
+      color: $black;
+    }
+  }
+  // Comments
+  #comments {
+    a:hover {
+      background: $parkdrei-secondary;
+      color: $black;
+    }
+
+    ol {
+      list-style: none;
+      margin-left: 0;
+      header {
+        time {
+          a {
+            color: $parkdrei-primary;
+            font-size: 0.9em;
+            font-weight: bold;
+          }
+        }
+        cite {
+          color: $black;
+          font-size: 1.0em;
+          font-style: normal;
+          font-weight: bold;
+        }
+        cite:before {
+          content: '';
+        }
+      }
+    }
+  }
+  #respond {
+    #allowed_tags {
+      display: none;
+    }
+    textarea {
+      height: 150px;
+    }
+  }
 }
 
 // sidebar
 aside {
+  h6 {
+    color: $parkdrei-primary;
+  }
+  label {
+    color: #ccc;
+  }
   .widget {
     color: #ccc;
     font-size: 0.8em;
@@ -59,6 +107,30 @@ aside {
     }
 
   }
+  // Login with Ajax
+  .widget_loginwithajaxwidget {
+
+  }
+  // Uli Age
+  .widget_uli_age {
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    .uliAgeMessage {
+      color: $black;
+    }
+
+    .day, .month {
+      width: 25%;
+      float: left;
+      margin-right: 6px;
+    }
+    .year {
+      width: 40%;
+      float: left;
+    }
+  }
+
 }
 
 // Footer

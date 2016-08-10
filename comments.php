@@ -12,9 +12,12 @@
 if ( have_comments() ) :
 	if ( (is_page() || is_single()) && ( ! is_home() && ! is_front_page()) ) :
 ?>
-	<section id="comments"><?php
+	<section id="comments">
+		<h3><?php printf( _n( 'Ein Kommentar', '%1$s Kommentare', get_comments_number(), 'foundationpress' ), number_format_i18n( get_comments_number() ) ); ?></h3>
+		<ol id="comment-list"><?php wp_list_comments( array( 'callback' => 'parkdrei_comment' ) ); ?></ol>
 
-
+		<?php
+		/*
 		wp_list_comments(
 			array(
 				'walker'            => new Foundationpress_Comments(),
@@ -23,19 +26,19 @@ if ( have_comments() ) :
 				'callback'          => null,
 				'end-callback'      => null,
 				'type'              => 'all',
-				'reply_text'        => __( 'Reply', 'foundationpress' ),
+				'reply_text'        => __( 'Antworten', 'foundationpress' ),
 				'page'              => '',
 				'per_page'          => '',
-				'avatar_size'       => 48,
+				'avatar_size'       => 0,
 				'reverse_top_level' => null,
 				'reverse_children'  => '',
 				'format'            => 'html5',
 				'short_ping'        => false,
-				'echo'  	    => true,
-				'moderation' 	    => __( 'Your comment is awaiting moderation.', 'foundationpress' ),
+				'echo'  	    => false,
+				'moderation' 	    => __( 'Dein Kommentar wartet auf Moderation.', 'foundationpress' ),
 			)
 		);
-
+		*/
 		?>
 
  	</section>
@@ -69,7 +72,7 @@ if ( comments_open() ) :
 	if ( (is_page() || is_single()) && ( ! is_home() && ! is_front_page()) ) :
 ?>
 <section id="respond">
-	<h3><?php comment_form_title( __( 'Leave a Reply', 'foundationpress' ), __( 'Leave a Reply to %s', 'foundationpress' ) ); ?></h3>
+	<h3><?php comment_form_title( __( 'Kommentieren', 'foundationpress' ), __( 'Leave a Reply to %s', 'foundationpress' ) ); ?></h3>
 	<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
 	<?php if ( get_option( 'comment_registration' ) && ! is_user_logged_in() ) : ?>
 	<p><?php printf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'foundationpress' ), wp_login_url( get_permalink() ) ); ?></p>
