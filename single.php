@@ -7,6 +7,7 @@
  */
 
 get_header(); ?>
+<?php get_template_part( 'template-parts/featured-image' ); ?>
 
 <div id="single-post" role="main">
 
@@ -22,7 +23,7 @@ get_header(); ?>
 
 		<?php
 			if ( has_post_thumbnail() ) :
-				the_post_thumbnail();
+				// the_post_thumbnail(); // Das haut in diesem Layout nicht hin
 			endif;
 		?>
 
