@@ -5656,7 +5656,7 @@ table.hover tr:nth-of-type(even):hover {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #121212; }
+    background-color: #fff; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -6625,6 +6625,9 @@ table.hover tr:nth-of-type(even):hover {
   My custom styles:
   Add your scss files below to structure your project styles
 */
+.main-navigation.top-bar {
+  border-bottom: 1px solid #006f08; }
+
 article.main-content .byline.author {
   font-size: 0.8em; }
 
@@ -6654,6 +6657,20 @@ article.main-content .entry-content img {
 article.main-content footer {
   font-size: 0.8em; }
   article.main-content footer a:hover {
+    background: #53ff5f;
+    color: #0a0a0a; }
+
+article.main-content .post-navigation {
+  margin-bottom: 12px; }
+  article.main-content .post-navigation .nav-previous:before {
+    content: '<<';
+    margin-right: 6px; }
+  article.main-content .post-navigation .nav-next:after {
+    content: '>>';
+    margin-left: 6px; }
+  article.main-content .post-navigation a {
+    text-decoration: underline; }
+  article.main-content .post-navigation a:hover {
     background: #53ff5f;
     color: #0a0a0a; }
 
@@ -6710,6 +6727,12 @@ aside .widget_uli_age {
     width: 40%;
     float: left; }
 
+aside .bwp-rc-widget ul {
+  list-style-type: none;
+  margin-left: 0; }
+  aside .bwp-rc-widget ul li {
+    margin-bottom: 12px; }
+
 /* Navigation breakpoints */
 @media screen and (max-width: 39.9375em) {
   .desktop-menu, .top-bar-left {
@@ -6749,7 +6772,7 @@ aside .widget_uli_age {
   padding: 1rem; }
 
 .top-bar .menu li:not(:last-child) {
-  border-right: 1px solid #4e4e4e; }
+  border-right: 1px solid #fff; }
 
 .top-bar .dropdown.menu .submenu {
   background-color: #121212;

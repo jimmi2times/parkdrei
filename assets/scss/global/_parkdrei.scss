@@ -7,6 +7,12 @@
 $parkdrei-primary: #006f08;
 $parkdrei-secondary: #53ff5f;
 
+.main-navigation.top-bar {
+  border-bottom: 1px solid $parkdrei-primary;
+  // background-image: url('http://liga.parkdrei.de/wp-content/uploads/2016/08/img_6043-1.jpg'); //$parkdrei-primary;
+}
+
+
 // Main column
 article.main-content {
   .byline.author {
@@ -41,6 +47,25 @@ article.main-content {
   }
   footer {
     font-size: 0.8em;
+    a:hover {
+      background: $parkdrei-secondary;
+      color: $black;
+    }
+  }
+
+  .post-navigation {
+    margin-bottom: 12px;
+    .nav-previous:before {
+      content: '<<';
+      margin-right: 6px;
+    }
+    .nav-next:after {
+      content: '>>';
+      margin-left: 6px;
+    }
+    a {
+      text-decoration: underline;
+    }
     a:hover {
       background: $parkdrei-secondary;
       color: $black;
@@ -128,6 +153,17 @@ aside {
     .year {
       width: 40%;
       float: left;
+    }
+  }
+
+// Recent comments
+  .bwp-rc-widget {
+    ul {
+      list-style-type: none;
+      margin-left: 0;
+      li {
+        margin-bottom: 12px;
+      }
     }
   }
 
