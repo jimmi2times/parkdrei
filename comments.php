@@ -79,7 +79,7 @@ if ( comments_open() ) :
 	<?php else : ?>
 	<form action="<?php echo get_option( 'siteurl' ); ?>/wp-comments-post.php" method="post" id="commentform">
 		<?php if ( is_user_logged_in() ) : ?>
-		<p><?php printf( __( 'Logged in as <a href="%s/wp-admin/profile.php">%1$s</a>.', 'foundationpress' ), get_option( 'siteurl' ), $user_identity ); ?> <a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php __( 'Log out of this account', 'foundationpress' ); ?>"><?php _e( 'Log out &raquo;', 'foundationpress' ); ?></a></p>
+		<p><?php printf( __( 'Eingeloggt als <a href="%s/wp-admin/profile.php">%s</a>.', 'foundationpress' ), get_option( 'siteurl' ), $user_identity ); ?> <a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php __( 'Logout', 'foundationpress' ); ?>"><?php _e( 'Logout &raquo;', 'foundationpress' ); ?></a></p>
 		<?php else : ?>
 		<p>
 			<label for="author">
@@ -92,7 +92,7 @@ if ( comments_open() ) :
 		<p>
 			<label for="email">
 				<?php
-					_e( 'Email (will not be published)', 'foundationpress' ); if ( $req ) { _e( ' (required)', 'foundationpress' ); }
+					_e( 'Email (wird nicht veröffentlicht)', 'foundationpress' ); if ( $req ) { _e( ' (required)', 'foundationpress' ); }
 				?>
 			</label>
 			<input type="text" class="five" name="email" id="email" value="<?php echo esc_attr( $comment_author_email ); ?>" size="22" tabindex="2" <?php if ( $req ) { echo "aria-required='true'"; } ?>>
@@ -100,7 +100,7 @@ if ( comments_open() ) :
 		<p>
 			<label for="url">
 				<?php
-					_e( 'Website', 'foundationpress' );
+					_e( 'Webseite', 'foundationpress' );
 				?>
 			</label>
 			<input type="text" class="five" name="url" id="url" value="<?php echo esc_attr( $comment_author_url ); ?>" size="22" tabindex="3">
@@ -109,7 +109,7 @@ if ( comments_open() ) :
 		<p>
 			<label for="comment">
 					<?php
-						_e( 'Comment', 'foundationpress' );
+						_e( 'Kommentar', 'foundationpress' );
 					?>
 			</label>
 			<textarea name="comment" id="comment" tabindex="4"></textarea>
