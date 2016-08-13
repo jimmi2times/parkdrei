@@ -8,8 +8,6 @@ $parkdrei-primary: #006f08;
 $parkdrei-secondary: #53ff5f;
 
 .main-navigation.top-bar {
-  border-bottom: 1px solid $parkdrei-primary;
-  // #background-image: url('http://liga.parkdrei.de/wp-content/uploads/2016/08/img_6043-1.jpg'); //$parkdrei-primary;
 }
 
 
@@ -56,11 +54,11 @@ article.main-content {
   .post-navigation {
     margin-bottom: 12px;
     .nav-previous:before {
-      content: '<<';
+      content: '«';
       margin-right: 6px;
     }
     .nav-next:after {
-      content: '>>';
+      content: '»';
       margin-left: 6px;
     }
     a {
