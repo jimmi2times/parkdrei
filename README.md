@@ -10,6 +10,6 @@ TODOS
 >> http://rachievee.com/responsive-images-in-wordpress/
 
 Ganzes Blog
-- LazyLoad Plugin
+- LazyLoad Plugin - done
 - Bulkedit tags and categories
 - unterwegs abschalten und rerooten
