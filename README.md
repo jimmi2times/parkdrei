@@ -12,4 +12,4 @@ TODOS
 Ganzes Blog
 - LazyLoad Plugin - done
 - Bulkedit tags and categories
-- unterwegs abschalten und rerooten
+- unterwegs abschalten und rerooten - done
