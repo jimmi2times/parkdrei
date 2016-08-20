@@ -167,4 +167,22 @@ aside {
 
 }
 
+
+// Prediction League Plugin
+ul.pl_menu {
+  li {
+    a {
+      padding: 0 8px !important;
+    }
+  }
+}
+
+input.tipsubmit {
+  color: $black;
+}
+
+.tipcolumnthree input {
+  display: inline;
+}
+
 // Footer
