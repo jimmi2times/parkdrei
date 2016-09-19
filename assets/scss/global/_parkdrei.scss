@@ -177,12 +177,52 @@ ul.pl_menu {
   }
 }
 
+
+td.tipcolumnone, td.tipcolumntwo, td.tipcolumnthree, td.tipcolumnfour, td.tipcolumnfive {
+  // Only affects medium screens and larger
+  @include breakpoint(small only) {
+    font-size: 0.8em !important;
+  }
+}
+
+th.tipcolumnone {
+  width: 10%;
+}
+th.tipcolumntwo {
+    width: 40%;
+    @include breakpoint(small only) {
+      width: 30% !important;
+    }
+}
+th.tipcolumnthree {
+    width: 22%;
+    @include breakpoint(small only) {
+      width: 32% !important;
+    }
+}
+th.tipcolumnfour {
+    width: 15%;
+}
+th.tipcolumnfive {
+    width: 13%;
+}
+
+
 input.tipsubmit {
   color: $black;
+  background-color: $parkdrei-secondary;
 }
 
 .tipcolumnthree input {
   display: inline;
+  @include breakpoint(small only) {
+    width: 35%;
+    font-size: 0.9em;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+    padding-left: 0.2rem;
+  }
 }
 
 // Footer
